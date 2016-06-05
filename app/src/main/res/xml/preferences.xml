@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="DYF"
+        android:key="pref_myname"
+        android:title="@string/pref_myname" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="pref_devicename"
+        android:title="@string/pref_devicename" />
+</PreferenceScreen>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:scrollbars="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/myname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_string"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/roleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_string"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/ipTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role_string"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/p2p_mac_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p2p_mac_default_text"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/go_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/go_intent_hint"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffbcbcbc" />
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffD3D3D3"
+                android:orientation="horizontal" >
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="DiscoverPeers"
+                    android:text="@string/btn_discover_peers" />
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Disconnect"
+                    android:text="@string/btn_disconnect" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="myCreateGroup"
+                    android:text="@string/btn_create_group" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="ShowGroupInfo"
+                    android:text="@string/btn_show_group_info" />
+
+                <!--<Button
+                    android:id="@+id/btn_openTextFile"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openTextFile"
+                    android:text="@string/btn_open_text_file" />
+
+                <Button
+                    android:id="@+id/btn_start_client"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="startClient"
+                    android:text="@string/btn_start_client" />
+
+                <Button
+                    android:id="@+id/btn_open_peer_text"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openPeerText"
+                    android:text="@string/btn_open_peer_text" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffbcbcbc" />
+
+            <!--<LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffD3D3D3"
+                android:orientation="horizontal" >
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="ShowGroupInfo"
+                    android:text="@string/btn_show_group_info" />
+
+                &lt;!&ndash;NOUSE&ndash;&gt;
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="ConnectWithoutDiscovery"
+                    android:text="@string/btn_connect" />
+
+                &lt;!&ndash;NOUSE&ndash;&gt;
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Disconnect"
+                    android:text="@string/btn_disconnect" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="myCreateGroup"
+                    android:text="@string/btn_create_group" />
+            </LinearLayout>-->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffbcbcbc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffD3D3D3"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onStartAdvertisementTest"
+                    android:text="@string/sat_button" />
+                
+                <EditText
+                    android:id="@+id/sat_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/sat_number_hint" />
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffbcbcbc" />
+
+            <!-- To select broadcast or unicast -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/add_service_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/service_hint" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onAddServiceClick"
+                    android:text="@string/btn_add_service" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/request_service_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/service_hint" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRequestServiceClick"
+                    android:text="@string/btn_request_service" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/file_name_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/file_name_hint" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onModifyFileName"
+                    android:text="@string/modify_file_name" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_bind_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textSize="10sp" >
+
+                <RadioButton
+                    android:id="@+id/rg_bind_ip_p2p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIpRadioButtonClicked"
+                    android:text="@string/bind_ip_p2p" />
+
+                <RadioButton
+                    android:id="@+id/rg_bind_ip_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIpRadioButtonClicked"
+                    android:text="@string/bind_ip_wifi" />
+
+                <RadioButton
+                    android:id="@+id/rg_bind_ip_lo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIpRadioButtonClicked"
+                    android:text="@string/bind_ip_lo" />
+
+                <RadioButton
+                    android:id="@+id/rg_bind_ip_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onIpRadioButtonClicked"
+                    android:text="@string/bind_ip_none" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/number_discovered_services_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/number_discovered_services_text_init"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Status: none"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ff999999" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/udp_show_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/numberPacketsText"
+                android:textIsSelectable="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="onResetFileServerClick"
+                android:text="@string/btnResetServerText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/udp_send_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/udp_msg_hint" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="StartUDPClient"
+                android:text="@string/btn_udp_client" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/dyf/Dropbox/Polito/Codes/WiFiD2D/app/src/main/res/layout/activity_main.xml -->

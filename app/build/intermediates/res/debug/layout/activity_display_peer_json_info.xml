@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayPeerJsonInfoActivity" >
+
+    <TextView
+        android:id="@+id/peer_json_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helloWorld" />
+    <TextView
+        android:id="@+id/peer_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helloWorld" />
+    <TextView
+        android:id="@+id/peer_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helloWorld" />
+
+</LinearLayout><!-- From: file:/Users/dyf/Dropbox/Polito/Codes/WiFiD2D/app/src/main/res/layout/activity_display_peer_json_info.xml -->

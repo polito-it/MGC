@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MGC</string>
+    <!-- Settings-->
+    <string name="action_settings">Settings</string>
+    <string name="action_persistent">Persistent</string>
+    <string name="action_setdevicename">Device name</string>
+    <string name="action_services">Contents</string>
+
+    <string name="numberPacketsText">Number of packets received: </string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_open_text_file">Open text</string>
+    <string name="btn_discover_peers">Discover</string>
+    <string name="btn_start_client">Start Client</string>
+    <string name="btn_open_peer_text">Open peer</string>
+    <string name="btn_show_group_info">Group</string>
+    <string name="btn_connect">Connect</string>
+    <string name="p2p_off_warning">Please turn on the Wifi-Direct</string>
+    <string name="title_activity_display_peer_json_info">Information of the peer</string>
+    <string name="title_activity_diplay_group_info">DiplayGroupInformation</string>
+    <string name="title_activity_display_group_info">DisplayGroupInfoInformation</string>
+    <string name="go_intent_hint">Enter the GO intent</string>
+    <string name="btn_create_group"> Create Group</string>
+    <!-- For the timer -->
+    <string name="timer">I am the Timer ^_^ </string>
+    <string name="btn_stop_timer">StopTimer</string>
+    <string name="btn_open_time_txt">Open Time File</string>
+    <!-- For Wifi server -->
+    <string name="btn_wifi_client">WiFi Client</string>
+    <string name="btn_wifi_server">WiFi Server</string>
+    <string name="btn_ap_client">AP Client</string>
+    <string name="server_port_hint">Enter the server port</string>
+    <string name="server_port">9000</string>
+
+    <!-- For udp -->
+    <string name="btn_udp_server">UDP Server</string>
+    <string name="btn_udp_client">Send</string>
+    <string name="btn_udp_client_bind">Send</string>
+    <string name="btn_udp_client_172">Send</string>
+    <string name="udp_msg_hint">Enter message</string>
+    <string name="udp_broad">Broadcast</string>
+    <string name="udp_uni_to_go">Unicast to GO</string>
+    <string name="udp_uni_to_client">Unicast to Client</string>
+    <string name="udp_to_client_ip">Enter IP</string>
+    <string name="udp_relay_yes">Enable relay</string>
+    <string name="udp_relay_no">Disable relay</string>
+
+    <!-- For application preference -->
+    <string name="pref_myname">Your name</string>
+    <string name="pref_devicename">Device name</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="btn_native">Native</string>
+    <string name="btn_discovery">Discover</string>
+    <string name="btn_publish">Publish</string>
+    <string name="svc_rqst_button">Request</string>
+    
+    <!-- For Service Protocol -->
+    <string name="send_ad_notif">Send Notif</string>
+    <string name="notif_ip">Enter IP</string>
+    <string name="name_string">Name: </string>
+    <string name="role_string">Role: </string>
+    <string name="p2p_mac_default_text">P2P MAC: </string>
+    <string name="btn_add_service">Add</string>
+    <string name="service_hint">Service name</string>
+    <string name="number_discovered_services_text">Total number of discovered contents: </string>
+    <string name="number_discovered_services_text_init">Total number of discovered contents: 0</string>
+    <string name="btn_request_service">Request</string>
+    
+    <string name="bind_ip_p2p">p2p</string>
+    <string name="bind_ip_wifi">wifi</string>
+    <string name="bind_ip_lo">lo</string>
+    <string name="bind_ip_none">none</string>
+    <string name="helloWorld">Hello World</string>
+    <string name="btnResetServerText">Reset</string>
+    <string name="file_name_hint">File name</string>
+    <string name="modify_file_name">Modify</string>
+    <string name="sat_button">Start Test</string>
+    <string name="sat_number_hint">Number of contents</string>
+    <string name="title_activity_persistent_groups">PersistentGroupsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_services_list">ContentsListActivity</string>
+
+</resources>
